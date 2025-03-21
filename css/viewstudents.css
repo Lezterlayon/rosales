@@ -1,0 +1,92 @@
+/* A4 Paper Settings */
+@page {
+    size: A4;
+    margin: 1.5cm;
+}
+
+/* School Header Styles */
+.school-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.school-header img {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.school-header h4 {
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+}
+
+.school-header p {
+    font-size: 14px;
+    margin-bottom: 0.2rem;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    body {
+        background: white !important;
+        font-size: 11px !important;
+        width: 210mm !important;
+        min-height: 297mm !important;
+        margin: 0 auto !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .school-header {
+        margin-bottom: 1rem !important;
+    }
+
+    .school-header img {
+        height: 50px !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .student-information-container {
+        margin-top: 20px !important;
+    }
+
+    .table {
+        margin-bottom: 0.8rem !important;
+    }
+
+    .table td {
+        border: 1px solid #000 !important;
+        padding: 0.3rem !important;
+    }
+
+    hr {
+        border-color: #000 !important;
+        margin: 10px 0 40px !important;
+    }
+
+    .card {
+        margin-bottom: 0.8rem !important;
+    }
+
+    .card-header {
+        padding: 0.3rem !important;
+    }
+
+    .card-body {
+        padding: 0.5rem !important;
+    }
+
+    .section-header {
+        margin-bottom: 0.5rem !important;
+    }
+}
